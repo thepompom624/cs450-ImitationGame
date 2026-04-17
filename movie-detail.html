@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imitation Game — Movie detail</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <img
+            class="brand__logo"
+            src="assets/images/imitationgamelogo.png"
+            alt="Imitation Game logo"
+            width="44"
+            height="44"
+          />
+          <span class="brand__text">Imitation Game</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="movies.html">Movies</a>
+          <a href="actors.html">Actors</a>
+          <a href="directors.html">Directors</a>
+          <a href="writers.html">Writers</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="back-row">
+        <a href="movies.html">← Back to movies</a>
+      </div>
+      <section class="panel">
+        <h1 id="movie-detail-title">Movie title</h1>
+        <p class="muted" id="movie-detail-tagline">
+          Detail fields load from CSV via <code>getMovieById</code> once implemented. URL may use
+          <code>?id=</code> query parameters.
+        </p>
+        <dl class="detail-grid" id="movie-detail-fields">
+          <!-- dt/dd pairs for runtime, plot, country, genre, director, writer, etc. -->
+        </dl>
+        <h2 class="subhead">Cast</h2>
+        <div class="list-shell" id="movie-detail-cast" aria-live="polite">
+          <p class="muted" style="margin: 0">
+            Cast list joins <code>ActsIn</code> with <code>People</code>. Hook:
+            <code>#movie-detail-cast</code>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="js/paths.js"></script>
+    <script src="js/data.js"></script>
+  </body>
+</html>

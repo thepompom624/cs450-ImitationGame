@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imitation Game — Actors</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <img
+            class="brand__logo"
+            src="assets/images/imitationgamelogo.png"
+            alt="Imitation Game logo"
+            width="44"
+            height="44"
+          />
+          <span class="brand__text">Imitation Game</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="movies.html">Movies</a>
+          <a class="is-active" href="actors.html">Actors</a>
+          <a href="directors.html">Directors</a>
+          <a href="writers.html">Writers</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="panel">
+        <h1>Actors</h1>
+        <p class="muted">Names resolve through <code>People</code> filtered by <code>Actor</code>.</p>
+        <div class="list-shell" id="actor-list" aria-live="polite">
+          <p class="muted" style="margin: 0">Actor names render here. Hook: <code>#actor-list</code></p>
+        </div>
+      </section>
+    </main>
+    <script src="js/paths.js"></script>
+    <script src="js/data.js"></script>
+  </body>
+</html>

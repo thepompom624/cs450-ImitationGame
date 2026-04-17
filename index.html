@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imitation Game — Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <img
+            class="brand__logo"
+            src="assets/images/imitationgamelogo.png"
+            alt="Imitation Game logo"
+            width="44"
+            height="44"
+          />
+          <span class="brand__text">Imitation Game</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a class="is-active" href="index.html">Home</a>
+          <a href="movies.html">Movies</a>
+          <a href="actors.html">Actors</a>
+          <a href="directors.html">Directors</a>
+          <a href="writers.html">Writers</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="panel">
+        <h1>A minimal movie catalog</h1>
+        <p class="lede">
+          Imitation Game is a course project that models a small slice of a movie database:
+          six related tables, static pages, and CSV-backed data. Browse movies and the people
+          who act, direct, and write—once the data layer is connected, lists and detail views
+          will populate the shells on this site.
+        </p>
+        <p class="muted">
+          Stack: HTML, CSS, and JavaScript in the browser; relational design expressed as CSV
+          files under <code>assets/csv_files/</code>.
+        </p>
+      </section>
+    </main>
+    <script src="js/paths.js"></script>
+    <script src="js/data.js"></script>
+  </body>
+</html>

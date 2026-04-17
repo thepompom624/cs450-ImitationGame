@@ -1,0 +1,6 @@
+movie_id,Title,Year,runtime_min,plot_summary,country_of_origin,genre,director_id,writer_id
+101,The Imitation Game,2014,114,"During WWII, mathematician Alan Turing works to crack the Enigma code.",United Kingdom,Biography/Drama,1,6
+102,Titanic,1997,195,A love story aboard the ill-fated RMS Titanic.,United States,Romance/Drama,2,2
+103,Interstellar,2014,169,Explorers travel through a wormhole near Saturn to find a new home for humanity.,United States,Sci-Fi/Drama,3,9
+104,Forrest Gump,1994,142,The story of a man with a low IQ who inadvertently influences major historical events.,United States,Drama/Comedy,4,8
+105,The Matrix,1999,136,A hacker discovers reality is a simulated world controlled by machines.,United States,Sci-Fi/Action,5,5

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imitation Game — Movies</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <img
+            class="brand__logo"
+            src="assets/images/imitationgamelogo.png"
+            alt="Imitation Game logo"
+            width="44"
+            height="44"
+          />
+          <span class="brand__text">Imitation Game</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a class="is-active" href="movies.html">Movies</a>
+          <a href="actors.html">Actors</a>
+          <a href="directors.html">Directors</a>
+          <a href="writers.html">Writers</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="panel">
+        <h1>Movies</h1>
+        <p class="muted">
+          Listing will show title, year, and genre. Each row should link to a detail page with
+          full fields and cast (feature wiring is intentionally not implemented in this scaffold).
+        </p>
+        <form class="toolbar" id="movie-sort-form" aria-label="Sort movies">
+          <div class="field" style="min-width: 260px">
+            <label for="movie-sort">Sort by</label>
+            <select id="movie-sort" name="sort">
+              <option value="genre-asc">Genre asc</option>
+              <option value="genre-desc">Genre dsc</option>
+              <option value="year-asc">Year asc</option>
+              <option value="year-desc">Year dsc</option>
+              <option value="title-asc">Title asc</option>
+              <option value="title-desc">Title desc</option>
+            </select>
+          </div>
+        </form>
+        <div class="list-shell" id="movie-list" aria-live="polite">
+          <p class="muted" style="margin: 0">
+            Movie rows render here. Hook: <code>#movie-list</code> · sort:
+            <code>#movie-sort</code>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="js/paths.js"></script>
+    <script src="js/data.js"></script>
+  </body>
+</html>
