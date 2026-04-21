@@ -14,10 +14,9 @@
             class="brand__logo"
             src="assets/images/imitationgamelogo.png"
             alt="Imitation Game logo"
-            width="44"
-            height="44"
+            width="250"
+            height="100"
           />
-          <span class="brand__text">Imitation Game</span>
         </a>
         <nav class="nav" aria-label="Primary">
           <a href="index.html">Home</a>
@@ -34,23 +33,17 @@
       </div>
       <section class="panel">
         <h1 id="movie-detail-title">Movie title</h1>
-        <p class="muted" id="movie-detail-tagline">
-          Detail fields load from CSV via <code>getMovieById</code> once implemented. URL may use
-          <code>?id=</code> query parameters.
-        </p>
-        <dl class="detail-grid" id="movie-detail-fields">
-          <!-- dt/dd pairs for runtime, plot, country, genre, director, writer, etc. -->
-        </dl>
+        <p>SQL: Select * from Movie NATURAL JOIN ActsIn NATURAL JOIN Actor where Movie.movie_id = movieId</p>
+        <p class="muted" id="movie-detail-tagline"></p>
+        <div class="detail-fields" id="movie-detail-fields"></div>
         <h2 class="subhead">Cast</h2>
-        <div class="list-shell" id="movie-detail-cast" aria-live="polite">
-          <p class="muted" style="margin: 0">
-            Cast list joins <code>ActsIn</code> with <code>People</code>. Hook:
-            <code>#movie-detail-cast</code>
-          </p>
-        </div>
+        <div class="list-shell" id="movie-detail-cast" aria-live="polite"></div>
       </section>
     </main>
     <script src="js/paths.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/people-table.js"></script>
+    <script src="js/movie-detail.js"></script>
   </body>
 </html>

@@ -11,7 +11,6 @@ Color Palette
 #D1DEDE	Alabaster Gray
 #1D201F	Carbon Black
 
-
 Logo
 imitationgamelogo.png
 
@@ -23,7 +22,3 @@ Home page just has a basic description of our project
 Movies shows movie titles, year, and genre with a filter dropdown. Movie can be clicked to go to a new page that shows all details and 
 
 Actors, Directors, Writers just shows Name of them
-
-
-
-

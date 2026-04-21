@@ -14,10 +14,9 @@
             class="brand__logo"
             src="assets/images/imitationgamelogo.png"
             alt="Imitation Game logo"
-            width="44"
-            height="44"
+            width="250"
+            height="100"
           />
-          <span class="brand__text">Imitation Game</span>
         </a>
         <nav class="nav" aria-label="Primary">
           <a href="index.html">Home</a>
@@ -31,13 +30,14 @@
     <main>
       <section class="panel">
         <h1>Writers</h1>
-        <p class="muted">Names resolve through <code>People</code> filtered by <code>Writer</code>.</p>
-        <div class="list-shell" id="writer-list" aria-live="polite">
-          <p class="muted" style="margin: 0">Writer names render here. Hook: <code>#writer-list</code></p>
-        </div>
+        <p>SQL: Select * from Writers NATURAL JOIN People</p>
+        <div class="list-shell" id="writer-list" aria-live="polite"></div>
       </section>
     </main>
     <script src="js/paths.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/people-table.js"></script>
+    <script src="js/writers.js"></script>
   </body>
 </html>
